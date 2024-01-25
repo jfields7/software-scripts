@@ -31,5 +31,10 @@ mkdir bin
 cd bin
 ln -s ../src/cvs bin/cvs
 
+# Add .cvspass for the user.
+if ! [ -f ~/.cvspass ]; then
+  touch ~/.cvspass
+fi
+
 # Clean up
 cd $script_dir
