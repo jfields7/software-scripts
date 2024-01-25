@@ -27,7 +27,9 @@ sed -i 's/getline /get_line /' lib/getline.{c,h}
 make
 
 # Add a symlink to the executable in the base directory.
-ln -s src/cvs cvs
+mkdir bin
+cd bin
+ln -s ../src/cvs bin/cvs
 
 # Clean up
 cd $script_dir

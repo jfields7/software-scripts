@@ -3,7 +3,7 @@ This repository contains a collection of scripts for installing outdated softwar
 Typically this involves downloading and compiling the software; systemwide installation
 is not performed because this often requires sudo permissions, which may not be available
 in every situation. However, where possible each script will add a symbolic link to the
-executable into the base directory to make manual installation easier.
+executable into a directory called "bin" to make access easier.
 
 There are scripts for the following programs:
 * CVS: An old version control program often used by other old software. Modern Linux
